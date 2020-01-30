@@ -13,8 +13,7 @@ class Api::CategoryController < ApplicationController
         else
             render json: {success: false, errors: @category.errors.full_messages, status: 406}
         end
-	    #@user = User.find(params[:id])
-	    #@survey=Suggestion.where(user_id:@user.id).count
+	    
     end
 
 protected

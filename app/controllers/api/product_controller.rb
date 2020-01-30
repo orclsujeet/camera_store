@@ -7,7 +7,7 @@ class Api::ProductController < ApplicationController
 
     def show
     	@category = Category.find(params[:id])
-        @products = Product.all.where(category_id: @category.id)#'product_id = ?', product_id
+        @products = Product.all.where(category_id: @category.id)
     end
 
     def create_product
